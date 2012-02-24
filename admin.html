@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/admin_styles.css">
+		<script src="./javascript/underscore-min.js" type="text/javascript"></script>
+		<script src="./javascript/jquery-1.6.4.js" type="text/javascript"></script>
+		<script src="./javascript/json.js" type="text/javascript"></script> 
+		<script src="./javascript/admin.js" type="text/javascript"></script>
+		<title>KCB + TL: Admin</title>
+	</head>
+	<body>
+		<div id="content_div">
+			<div id="header_div">
+				<h1 class="event_button" id="charlottesville_tab" event_name="Charlottesville">Charlottesville, VA</h1>
+				<h1 class="event_button" id="seattle_tab" event_name="Seattle">Seattle, WA</h1>
+			</div>
+			<div id="results_div">
+				<!-- Loaded via underscore.js templates -->
+			</div>
+		</div>
+	</body>
+</html>
+
+<script type="text/html" id="empty-results-template">
+	<h1 id="empty-results-h1">No one has RSVPed for this event yet - check back soon!</h1>
+</script>
+
+<script type="text/html" id="loading-template">
+	<h1 id="loading-h1">Please wait while we load the data</h1>
+	<img src="./pictures/processing.gif" id="data-loading-img"/>
+</script>
+
+<script type="text/html" id="framework-template">
+	<div id="results_summary_div" class="results_summary_div">
+		<h1 id="attendees_h1" class="results-summary-h1">Attendees: <span class="<%= summary_count_class %>"><%= attendees %></span></h1>
+		<h1 id="vegetarians_h1" class="results-summary-h1">Vegetarians: <span class="<%= summary_count_class %>"><%= vegetarians %></span></h1>
+		<h1 id="declines_h1" class="results-summary-h1">Declines: <span class="<%= summary_count_class %>"><%= declines %></span></h1>
+	</div>
+	<div id="results_details_div" class="results_details_div">
+		<table>
+			<tr>
+				<th></th>
+				<th class="guest-th">Guest One</th>
+				<th class="guest-th">Guest Two</th>
+			</tr>
+			<%= table_body %>
+		</table>
+	</div>
+</script>
+
+<script type="text/html" id="details-row-template">
+	<tr>
+		<td class="accept-decline-shared-td <%= accept_decline_class %>"><%= accept_decline_value %></td>
+		<td class="name-td"><%= person1_LastName %>, <%= person1_FirstName %> <%= person_1_veggie_string %></td>
+		<td class="<%= person_2_class %>"><%= person_2_string %></td>
+	</tr> 
+</script>
+
+<script type="text/html" id="details-error-template">
+	<p class="error_p">There was a problem loading results.</p>
+</script>

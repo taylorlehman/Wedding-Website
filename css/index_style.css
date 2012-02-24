@@ -1,0 +1,209 @@
+@font-face {
+	font-family: 'LeagueGothicRegular';
+	src: url('./fonts/league_gothic.eot');
+	src: local('League Gothic Regular'), local('League-Gothic'),
+	url('./fonts/league_gothic.ttf') format('truetype');
+}
+
+body {
+	color: #f586b6;
+	padding: 0px;
+	margin: 0px;
+	border: 0px 0px 30px 0px;
+	background-color: white;
+	font-family: Trebuchet MS;
+	text-align: center;
+}
+
+.home_top_div{
+	width: 100%;
+	height: 480px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px 0px 1px 0px;
+	background: #81E4D0 url('../pictures/fletch.png');
+}
+
+.home_content_div{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	padding: 0px;
+	border: 0px;
+}
+
+.home_top_left_div{
+	position: absolute;
+	margin: 0px;
+	padding: 30px 0px 0px 0px;
+	border: 0px;
+	width: 500px;
+}
+
+.home_top_right_div{
+	position: relative;
+	left: 500px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 500px;
+	text-align: center;
+}
+
+.home_content_img{
+	border: 5px solid white;
+    -moz-box-shadow: 1px 1px 3px #636363;
+    -webkit-box-shadow: 1px 1px 3px #636363;
+    box-shadow: 1px 1px 3px #636363;
+}
+
+.title_h1{
+	color: white;
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: -.02em;
+	margin: 0px auto 0px auto;
+	padding: 30px 0px 30px 0px;
+	width: 1000px;
+}
+
+.home_content_h1{
+	font-size: 34px;
+	padding: 25px 0px 0px 0px;
+	margin: 0px;
+	border: 0px;
+	text-shadow: none;
+	color: #636363;
+}
+
+.home_content_p{
+	color: white;
+	font-size: 26px;
+	padding: 0px;
+	margin: 0px;
+	letter-spacing: .05em;
+	text-shadow: none;
+}
+
+.home_bottom_div{
+	width: 1000px;
+	margin: 0px auto 0px auto;
+	padding: 10px 0px 0px 0px;
+	border: 0px;
+	text-shadow: none;
+}
+
+.nav_ul{
+	letter-spacing: .07em;
+	font-size: 22px;
+	list-style: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow: none;
+	padding: 0px 0px 15px 0px;
+	margin: 0px;
+	width: 1000px;
+	border-bottom: 1px solid #DBDBDB;
+}
+
+.nav_ul li{
+	display: inline;
+	padding: 0px 20px 0px 0px;
+}
+
+.nav_a:link{
+	text-decoration: none;
+	color: #f586b6;
+}
+
+.nav_a:visited{
+	text-decoration: none;
+	color: #f586b6;
+}
+
+.nav_a:hover{
+	text-decoration: none;
+	color: #96E4EF;
+}
+
+.home_bottom_div h1{
+	color: #96E4EF;
+	padding: 0px;
+	margin: 0px;
+	font-size: 24px;
+	letter-spacing: .07em;
+}
+
+.home_bottom_div p{
+	color: #636363;
+	font-family: Georgia;
+	font-weight: normal;
+	padding: 0px 0px 15px 0px;
+	margin: 0px;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: .07em;
+}
+
+.home_bottom_div h2{
+	font-weight: bold;
+	color: #636363;
+	padding: 5px 0px 0px 0px;
+	margin: 0px;
+	font-size: 20px;
+}
+
+.home_bottom_left a:link, a:visited{
+	color: #f586b6;
+}
+
+.home_bottom_left a:hover{
+	color: #96E4EF;
+}
+
+.home_bottom_left{
+	position: absolute;
+	width: 580px;
+	padding: 15px 0px 0px 0px; 
+	margin: 0px;
+	text-align: left;
+}
+
+.home_bottom_right{
+	width: 350px;
+	padding: 15px 0px 0px 0px; 
+	margin: 0px 0px 0px 20px;
+	text-align: left;
+	position: relative;
+	left: 600px;
+}
+
+.rsvp_now_button{
+	color: white !important;
+	text-decoration: none;
+	background-color: #f586b6;
+	width: 200px;
+	font-family: "Trebuchet MS";
+	font-size: 32px;
+	margin: 0px auto 0px auto;
+	border: 0px;
+	padding: 10px;
+	border-radius: 8px;
+	cursor: pointer;
+	display: block;
+}
+
+.rsvp_now_button:hover{
+	color: #f586b6 !important;
+	background-color: white;
+	text-decoration: none;
+	width: 200px;
+	font-family: "Trebuchet MS";
+	font-size: 32px;
+	margin: 0px auto 0px auto;
+	border: 0px;
+	padding: 10px;
+	border-radius: 8px;
+	cursor: pointer;
+	display: block;
+}

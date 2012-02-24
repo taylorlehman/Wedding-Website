@@ -1,0 +1,992 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	font-family: Trebuchet MS;
+	width: 100%;
+	background: #81E4D0 url('../pictures/fletch.png');
+}
+
+.header_div{
+	width: 100%;
+	padding: 20px 0px 0px 0px;
+	margin: 0px;
+	border: 0px;
+	text-align: center;
+}
+
+.nav_div{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	background-color: white;
+	-moz-box-shadow: 0px 1px 4px #636363;
+    -webkit-box-shadow: 0px 1px 4px #636363;
+    box-shadow: 0px 1px 4px #636363;
+}
+
+.nav_ul{
+	width: 1050px;
+	font-size: 22px;
+	padding: 10px 0px 10px 0px;
+	list-style: none;
+	letter-spacing: .03em;
+	display: block;
+	margin: 0px auto 0px auto;
+	text-align: left;
+	font-weight: 600;
+}
+
+.nav_ul li{
+	padding: 10px 20px 0px 0px;
+	display: inline;
+}
+
+.nav_ul a:link{
+	text-decoration: none;
+	color: #f586b6;
+}
+
+.nav_ul a:visited{
+	color: #f586b6;
+}
+
+.nav_ul a:hover{
+	text-decoration: none;
+	color: #81E4D0;
+}
+
+.title_div{
+	width: 1050px;
+	color: white;
+	text-align: left;
+	margin: 0px auto 0px auto;
+	padding: 0px;
+	border: 0px;
+}
+
+.title_div h1{
+	color: #636363;
+	padding: 15px 0px 15px 0px;
+	margin: 0px;
+	border: 0px;
+	font-size: 50px;
+}
+
+.content_div{
+	margin: 0px auto 0px auto;
+	padding: 20x 0px 0px 0px;
+	width: 1050px;
+	text-align: left;
+}
+
+/***************************************************************/
+/****************************  MAPS  ***************************/
+/***************************************************************/
+.maps_top_div{
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+	padding: 0px 0px 20px 0px;
+}
+
+.map_div{
+	width: 450px;
+	height: 390px;
+	border: 1px solid white;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+}
+
+.map_options_div{
+	width: 550px;
+	position: relative;
+	left: 465px;
+	padding: 0px 0px 0px 20px;
+	margin: 0px;
+	border: 0px;
+	text-align: left;
+}
+
+.map_options_ul{
+	letter-spacing: .05em;
+	font-size: 22px;
+	list-style: none;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.map_options_li_mouse_over{
+	margin: 0px auto 10px auto;
+	width: 400px;
+	border: 1px solid white;
+	padding: 3px;
+	background: url('../pictures/transparent_white_bg.png');
+	text-align: center;
+    color: #f586b6;;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.map_options_li{
+	background: white;
+	margin: 0px auto 10px auto;
+	border: 1px solid white;
+	padding: 3px;
+	text-align: center;
+    color: #f586b6;;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 400px;
+}
+
+.map_options_h1{
+    color: #636363;
+	font-size: 30px;
+	padding: 0px 0px 20px 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.map_options_p{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 22px;
+	font-style: italic;
+	font-family: Georgia, serif;
+	letter-spacing: .05em;
+	text-align: center;
+	color: white;
+}
+
+.directions_container{
+	padding: 0px;
+	border: 0px;
+	color: #636363;
+}
+
+.map_options_a:link{
+	text-decoration: none;
+	color: white;
+}
+
+.map_options_a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+.map_options_a:hover{
+	text-decoration:underline;
+	color: white;
+}
+
+.directions_outer_container{
+	background-color: white;
+	border-radius: 5px;
+	margin: 30px 0px 20px 0px;
+	opacity: 0.0;
+	width: 990px;
+	padding: 0px;
+}
+
+.directions_header{
+	height: 35px;
+	padding: 5px 0px 0px 0px;
+	width: 100%;
+	margin: 0px;
+}
+
+.directions_a:link{
+	position: relative;
+	text-decoration: none;
+	font-size: 24px;
+	color: #f586b6;
+	margin: 0px;
+	border: 0px;
+	left: 920px;
+	top: 0px;
+	display: block;
+	width: 150px;
+}
+
+.directions_a:visited{
+	position: relative;
+	text-decoration: none;
+	font-size: 24px;
+	color: #f586b6;
+	left: 920px;
+	top: 0px;
+	margin: 0px;
+	border: 0px;
+	display: block;
+	width: 150px;
+}
+
+.directions_a:hover{
+	color: #81E4D0;
+	position: relative;
+	text-decoration: none;
+	font-size: 24px;
+	left: 920px;
+	top: 0px;
+	margin: 0px;
+	border: 0px;
+	display: block;
+	width: 150px;
+}
+
+.directions_h1{
+	display: block;
+	position: absolute;
+	text-decoration: none;
+	font-size: 24px;
+	color: #636363;
+	margin: 0px;
+	border: 0px;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	opacity: 0.0;
+}
+
+/***************************************************************/
+/****************************  MEDIA  **************************/
+/***************************************************************/
+
+.media_engagement{
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-size: 18px;
+	color: #636363;
+	text-align: left;
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+}
+
+.media_engagement a:link, .media_engagement a:visited{
+	color: white;
+}
+
+.media_engagement a:hover{
+	color: #f586b6;
+}
+
+.media_nav_div{
+	padding: 0px;
+	margin: 0px 0px 0px 0px;
+	border: 0px;
+	text-align: center;
+	width: 80px;
+	position: relative !important;
+	width: 80px;
+	height: 400px;
+	left: 675px;
+	top: 0px;
+	display: block;
+}
+
+.media_nav_image_div{
+	border: 1px solid white;
+	padding: 0px;
+	margin: 0px 0px 15px 0px;
+	height: 75px;
+	width: 75px;
+	display: block;
+}
+
+#media_nav_back{
+	border: 0px;
+	opacity: 0.5;
+}
+
+#media_nav_next{
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.media_main_img{
+	max-height: 500px;
+	max-width: 600px;
+	border: 5px solid white;
+	-moz-box-shadow: 1px 1px 3px #636363;
+    -webkit-box-shadow: 1px 1px 3px #636363;
+    box-shadow: 1px 1px 3px #636363;
+	opacity: 0;
+	margin: 0px;
+	position: absolute;
+	display: block;
+}
+
+.media_text{
+	z-index: 100;
+	opacity: 0;
+	background: url('../pictures/dark_bg.png');
+	padding: 20px;
+	margin: 0px;
+	border-top: 1px solid black;
+	position: absolute;
+	text-align: left;
+}
+
+.media_text h1{
+	color: white;
+	font-weight: 800;
+	font-size: 22px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.media_text h2{
+	color: #81E4D0;
+	font-weight: 800;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.chat-bubble {
+	background: url('../pictures/dark_bg.png');
+	font-size:16px;
+	line-height:1.3em;
+	padding:10px;
+	position:absolute;
+	z-index: 100;
+	text-align:center;
+	width:120px;
+	border-radius: 10px;
+	border: transparent;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	color: white;
+	opacity: 0;
+}
+
+.chat-bubble-arrow {
+	border-color:  transparent #507A80 transparent transparent;
+	border-style: solid;
+	border-width: 10px;
+	height:0;
+	width:0;
+	position:absolute;
+	left:-19px;
+	bottom:30px;
+}
+
+/***************************************************************/
+/****************************  REGISTRY  ***********************/
+/***************************************************************/
+.lightbox_close{
+	background-color: white;
+	border: 4px solid black;
+	color: black;
+	font-family: arial;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 2px 0px 0px 0px;
+	height: 24px;
+	width: 26px;
+	border-radius: 17px;
+	-moz-border-radius:17px;
+	-webkit-border-radius:17px;
+	display: none;
+	z-index: 120;
+	position: absolute;
+	text-align: center;
+	cursor: pointer;
+}
+
+.lightbox_close:hover{
+	background-color: black;
+	color: white;
+}
+
+.continue_to_charity{
+	background-color: #f586b6;
+	color: white;
+	font-family: Trebuchet MS;
+	font-size: 24px;
+	text-align: center;
+	padding: 5px;
+	margin: 0px auto 0px auto;
+	border: 0px;
+	cursor: pointer;
+	width: 500px;
+}
+
+.lightbox_action_div{
+	width: 100%;
+	text-align: center;
+}
+
+.continue_to_charity:hover{
+	background-color: #81E4D0;
+}
+
+.lightbox h1{
+	font-family: Trebuchet MS;
+	font-size: 32px;
+	color: #81E4D0;
+}
+
+.lightbox p{
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 24px;
+	color: #636363;
+}
+
+.lightbox_background{
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	background-color: black;
+	z-index: 50;
+	opacity: 0.5;
+	padding: 0px;
+	margin: 0px;
+	display: none;
+}
+
+.lightbox_border{
+	border-radius: 5px;
+	border: transparent;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background-color: black;
+	opacity: 0.5;
+	width: 770px;
+	height: 470px;
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	z-index: 100;
+	display: none;
+}
+
+.lightbox{
+	background-color: white;
+	opacity: 1.0;
+	left: 110px;
+	top: 110px;
+	height: 430px;
+	width: 700px;
+	padding: 10px 25px 10px 25px;
+	margin: 0px;
+	border: 0px;
+	position: absolute;
+	z-index: 110;
+	display: none;
+}
+
+.registry_h1{
+	width: 825px;
+	padding: 0px;
+	border: 0px;
+	margin-top: 0px;
+	text-align: left;
+	color: #636363;
+	font-size: 26px;
+	font-weight: 400;
+}
+
+.registry_top{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.registry_bottom{
+	padding: 0px;
+	margin: 0px 0px 20px 0px;
+	border: 0px;
+}
+
+.registry_logo_a:link{
+	display: block;
+	border: 1px solid white;
+	border-radius: 5px;
+	width: 400px;
+	text-align: center;
+	background-color: white;
+	height: 90px;
+	margin-bottom: 40px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.registry_logo_a:visited{
+	border: 1px solid white;
+	background-color: white;
+}
+
+.registry_logo_a:hover{
+	border: 1px solid #f586b6;
+	background-color: white;
+}
+
+.registry_div{
+	width: 400px;
+	border-radius: 5px;
+	background-color: white;
+	padding: 15px 10px 10px 10px;
+	margin: 0px 0px 20px 0px;
+	border: 1px solid white;
+}
+
+.charity_img{
+	margin-bottom: 15px;
+	border: 0px;
+}
+
+.charity_h1{
+	color: #81E4D0;
+	padding-bottom: 5px;
+	margin: 0px;
+	border: 0px;
+}
+
+.charity_p{
+	font-family: Georgia, serif;
+	color: #636363;
+	letter-spacing: .05em;
+	padding-top: 0px;
+	margin: 0px 10px 15px 10px;
+	border: 0px;
+}
+
+.charity_a{
+	display: block;
+	color: white;
+	background-color: #f586b6;
+	text-decoration: none;
+	font-size: 22px;
+	padding: 5px;
+	margin: 5px;
+	border: 0px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.charity_a:hover{
+	background-color: #81E4D0;
+	color: white;
+}
+
+/***************************************************************/
+/***********************  WEDDING PARTY  ***********************/
+/***************************************************************/
+
+.wp_h1{
+	margin-top: 0px;
+	font-size: 26px;
+	font-weight: 400;
+	color: #636363;
+}
+
+.wp_ul{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	height: 1290px;
+}
+
+.wp_li{
+	list-style: none;
+	border-radius: 5px;
+	width: 300px;
+	height: 300px;
+	padding: 0px;
+	margin: 0px 20px 20px 0px;
+	border: 1px solid white;
+	color: #81E4D0;
+	font-size: 25px;
+	float: left;
+	text-align: left;
+	opacity: 0.0;
+	text-transform: uppercase;
+}
+
+.wp_content_h1_one_line{
+	color: white;
+	width: 100%;
+	margin: 220px 0px 0px 0px;
+	line-height: 1;
+	padding: 0px 10px 0px 10px;
+	text-shadow: 1px 1px #636363;
+}
+
+.wp_content_h1_two_line{
+	color: white;
+	width: 100%;
+	margin: 170px 0px 0px 0px;
+	line-height: 1;
+	padding: 0px 10px 0px 10px;
+	text-shadow: 1px 1px #636363;
+}
+
+.wp_content_h2{
+	color: white;
+	width: 100%;
+	line-height: 1;
+	padding: 0px 0px 0px 10px;
+	margin: 0px;
+	border: 0px;
+	font-size: 20px;
+	text-shadow: 1px 1px #636363;
+}
+
+/***************************************************************/
+/***********************  VISIT VIRGINIA  **********************/
+/***************************************************************/
+
+.visit_h1{
+	margin-top: 0px;
+}
+
+.visit_ul{
+	list-style: none;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 780px;
+}
+
+.visit_li{
+	background-color: white;
+	border-radius: 5px;
+	width: 230px;
+	height: 230px;
+	padding: 0px;
+	margin: 0px 20px 20px 0px;
+	border: 1px solid white;
+	color: #81E4D0;
+	font-size: 35px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	opacity: 0.0;
+}
+
+.visit_content_ul{
+	letter-spacing: .05em;
+	font-size: 22px;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	width: 900px;
+	height: 42px;
+}
+
+.visit_content_li{
+	opacity: 0.0;
+	display: none;
+	background-color: white;
+	border-radius: 5px;
+	padding: 0px;
+	margin: 0px 10px 20px 0px;
+	border: 1px solid white;
+	color: #81E4D0;
+	width: 120px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+}
+
+.visit_content_div{
+	opacity: 0.0;
+	display: none;
+	width: 750px;
+	padding: 15px;
+	margin: 0px 0px 20px 0px;
+	background-color: white;
+	border-radius: 5px;
+	border: 0px;
+	color: #636363;
+}
+
+.visit_content_h1{
+	font-size:34px;
+	color:#f586b6;
+}
+
+.visit_content_p{
+	font-family: Georgia, serif;
+	letter-spacing: .05em;
+	font-size: 20px;
+}
+
+.visit_more_li{
+	font-family: Georgia, serif;
+	color: #636363;
+	letter-spacing: .05em;
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.visit_more_a:link{
+	color: #81E4D0;
+}
+
+.visit_more_a:visited{
+	color: #81E4D0;
+}
+
+.visit_more_a:hover{
+	color: #f586b6;
+}
+
+.visit_content_a:link{
+	color: #81E4D0;
+}
+
+.visit_content_a:visited{
+	color: #81E4D0;
+}
+
+.visit_content_a:hover{
+	color: #f586b6;
+}
+
+.visit_food_li{
+	list-style: none;
+	margin-bottom: 30px;
+}
+
+.visit_food_h1{
+	font-size: 23px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	text-transform: uppercase;
+}
+
+.visit_food_h2{
+	font-family: arial;
+	color: #636363;
+	letter-spacing: .05em;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px 0px 7px 0px;
+	border: 0px;
+	
+}
+
+.visit_food_p{
+	font-family: Georgia, serif;
+	color: #636363;
+	letter-spacing: .05em;
+	font-size: 18px;
+	padding: 0px;
+	margin: 0px 0px 10px 0px;
+	border: 0px;
+}
+
+.visit_food_a:link{
+	font-size: 20px;
+	color: #81E4D0;
+	letter-spacing: .05em;
+	float: left;
+	margin-right: 15px;
+}
+
+.visit_food_a:visited{
+	color: #81E4D0;
+}
+
+.visit_food_a:hover{
+	color: #f586b6;
+}
+
+.visit_food_div{
+	height: 25px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+/***************************************************************/
+/*************************** CEREMONY **************************/
+/***************************************************************/
+
+#ceremony_left{
+	position: absolute;
+	width: 580px;
+	padding: 15px 0px 0px 0px; 
+	margin: 0px;
+	text-align: left;
+}
+
+#ceremony_right{
+	width: 350px;
+	padding: 15px 0px 0px 0px; 
+	margin: 0px 0px 0px 20px;
+	text-align: left;
+	position: relative;
+	left: 600px;
+}
+
+.ceremony_bottom_div h1{
+	color: #636363;
+	padding: 0px;
+	margin: 0px;
+	font-size: 24px;
+	letter-spacing: .07em;
+}
+
+.ceremony_bottom_div p{
+	color: #636363;
+	font-family: Georgia;
+	font-weight: normal;
+	padding: 0px 0px 15px 0px;
+	margin: 0px;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: .07em;
+}
+
+.ceremony_bottom_div h2{
+	font-weight: bold;
+	color: white;
+	padding: 5px 0px 0px 0px;
+	margin: 0px;
+	font-size: 20px;
+}
+
+#ceremony_left a:link, a:visited{
+	color: #f586b6;
+}
+
+#ceremony_left a:hover{
+	color: white;
+}
+
+/***************************************************************/
+/*************************** Travel ****************************/
+/***************************************************************/
+.travel_a:link, .travel_a:visited{
+	color: white;
+}
+
+.travel_a:hover{
+	color: #f586b6;
+}
+
+.travel_p{
+	color: #636363;
+	letter-spacing: .04em;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: normal;
+	font-style: italic;
+	font-family: Georgia;
+}
+
+.hotel_h1{
+	margin-top: 0px;
+}
+
+#hotel_top_right_div{
+	position: relative;
+	left: 520px;
+}
+
+#hotel_top_left_div{
+	position: absolute;
+}
+
+.hotel_top_div{
+	width: 500px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.hotel_book_button:link, .hotel_book_button:visited{
+	display: block;
+	width: 200px;
+	padding: 7px 0px 7px 0px;
+	cursor: pointer;
+	margin: 0px 0px 25px 0px;
+	border: 1px solid white;
+	border-radius: 5px;
+	color: white;
+	background-color: white;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-size: 22px;
+	color: #93DDFF; 
+	text-decoration: none;
+}
+
+.hotel_book_button:hover{
+	display: block;
+	width: 200px;
+	padding: 7px 0px 7px 0px;
+	cursor: pointer;
+	margin: 0px 0px 25px 0px;
+	border: 1px solid white;
+	border-radius: 5px;
+	color: white;
+	background-color: #f586b6;
+	background: url('../pictures/transparent_white_bg.png');
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-size: 22px;
+	color: white; 
+	text-decoration: none;
+}
+
+.hotel_top_div h1{
+	padding: 0px;
+	margin: 0px;
+	color: white;
+}
+
+.hotel_top_div h2{
+	padding: 0px 0px 10px 0px;
+	margin: 0px;
+	color: #f586b6;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+}
+
+.hotel_top_div h3{
+	padding: 0px 0px 10px 0px;
+	margin: 0px;
+	color: #636363;
+	font-size: 20px;
+	letter-spacing: .05em;
+}
+
+.hotel_top_div p{
+	font-family: Georgia, serif;
+	color: #636363;
+	letter-spacing: .08em;
+	font-size: 18px;
+	padding: 0px;
+	margin: 0px 0px 10px 0px;
+	font-style: italic;
+}
+
+.hotel_top_div strong{
+	font-weight: 600;
+	font-family: Trebuchet MS, sans serif;
+	font-style: normal !important;
+}

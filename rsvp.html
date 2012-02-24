@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/rsvp_style.css">
+		<script src="./javascript/underscore-min.js" type="text/javascript"></script>
+		<script src="./javascript/jquery-1.6.4.js" type="text/javascript"></script>
+		<script src="./javascript/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+		<script src="./javascript/json.js" type="text/javascript"></script> 
+		<script src="./javascript/rsvp.js" type="text/javascript"></script>
+		<title>KCB + TL: RSVP</title>
+	</head>
+	<body>
+		<div id="content_div" class="content_div">
+			<div id="title_div" class="title_div">
+				<h1>Casey and Taylor are getting married!</h1>
+				<h2>And you're invited to celebrate with us!</h2>
+			</div>
+			<div id="action_div" class="action_div">
+				<div id="charlottesville_div" class="rsvp_div"></div>
+				<div id="seattle_div" class="rsvp_div"></div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script type="text/html" id="framework-template">
+	<h1 class="framework_h1"><%= venue_name %></h1>
+	<h2 class="framework_h2"><%= venue_date %></h2>
+	<h2 class="framework_h2"><%= venue_location %></h2>
+	<div id="<%= event %>_variable_action_div" class="variable_action_div">
+		<div id="accept_button" class="a_d_button" response="1" event="<%= event %>" enabled="1">Accepts with Pleasure</div>
+		<div id="decline_button" class="a_d_button" response="0" event="<%= event %>" enabled="1">Declines with Regret</div>
+	</div>
+</script>
+
+<script type="text/html" id="rsvp-form">
+	<form id="form_id">
+		<h1 class="rsvp_form_h1">Person 1</h1>
+		<input type="text" id="<%= event %>_person1_first_name" class="rsvp_input" value="First Name" defaultvalue="First Name" state="0" error_state="0"/>
+		<input type="text" id="<%= event %>_person1_last_name" class="rsvp_input"  value="Last Name" defaultvalue="Last Name" state="0" error_state="0"/>
+		<div class="vegetarian_div">
+			<input type="checkbox" id="<%= event %>_person1_vegetarian_checkbox" />
+			<label id="vegetarian_label">Request Vegetarian Meal</label>
+		</div>
+		<div class="person2_title_div">
+			<h1 class="rsvp_form_h1" id="person2_h1">Person 2</h1>
+			<h2 class="rsvp_form_h2">(optional)</h2>
+		</div>
+		<input type="text" id="<%= event %>_person2_first_name" class="rsvp_input"  value="First Name" defaultvalue="First Name" state="0" error_state="0"/>
+		<input type="text" id="<%= event %>_person2_last_name" class="rsvp_input"  value="Last Name" defaultvalue="Last Name" state="0" error_state="0"/>
+		<input type="checkbox" id="<%= event %>_person2_vegetarian_checkbox" />
+		<label id="vegetarian_label">Request Vegetarian Meal</label>
+		<div id="rsvp_button" class="rsvp_button" event="<%= event %>">RSVP</div>
+	</form>
+</script>
+
+<script type="text/html" id="decline-form">
+	<form id="form_id">
+		<p class="form_p">We're sorry you won't be able to make it!  Please enter your name so we can record your RSVP.</p>
+		<input type="text" id="<%= event %>_person1_first_name" class="rsvp_input" value="First Name" defaultvalue="First Name" state="0" error_state="0"/>
+		<input type="text" id="<%= event %>_person1_last_name" class="rsvp_input"  value="Last Name" defaultvalue="Last Name" state="0" error_state="0"/>
+		<div id="rsvp_button" class="rsvp_button" event="<%= event %>">RSVP</div>
+	</form>
+</script>
+
+<script type="text/html" id="processing-template">
+	<h1 class="processing_h1">We are saving your response</h1>
+	<h2 class="processing_h2">Please wait just a moment</h2>
+	<img src="./pictures/processing.gif" class="processing_image"/>
+</script>
+
+<script type="text/html" id="accept-result-charlottesville">
+	<ul id="accept_result_ul" class="accept_result_ul">
+		<li><a href="http://www.caseyandtaylor.com/travel.html">Travel and Hotel Tips</a></li>
+		<li><a href="http://www.caseyandtaylor.com/maps.html">Driving Directions</a></li>
+		<li><a href="http://www.caseyandtaylor.com/registry.html">Registry</a></li>
+	</ul>
+		<p class="rsvp_reminder_p">Attending Seattle as well?  Don't forget to RSVP!</p>
+</script>
+
+<script type="text/html" id="accept-result-seattle">
+	<ul id="accept_result_ul" class="accept_result_ul">
+		<li><a href="http://www.caseyandtaylor.com/registry.html">Registry</a></li>
+	</ul>
+	<p class="rsvp_reminder_p">Attending Charlottesville too?  Don't forget to RSVP!</p>
+</script>
+
+<script type="text/html" id="accept-result">
+	<div class="result_div">
+		<h1 class="accept_result_h1">Reservation Confirmed</h1>
+		<h2 class="accept_result_h2">For <%= people %></h2>
+		<h3 class="accept_result_h3">Here are some links you may find useful:</h3>
+		<%= locationSpecificData %>
+	</div>
+</script>
+
+<script type="text/html" id="decline-result">
+	<div class="result_div">
+		<p class="form_p"><span class="decline_span"><%= people %></span>, we've recieved your regrets.  Thanks for taking the time to respond!</p>
+	</div>
+</script>
+
+<script type="text/html" id="error-result">
+	<div class="result_div">
+		<p class="form_p">Oops, something went wrong.  Please send your RSVP to Casey and Taylor via email at <a href="mailto:taylor.lehman@hotmail.com" id="error_email_link">taylor.lehman@hotmail.com</a></p>
+	</div>
+</script>
